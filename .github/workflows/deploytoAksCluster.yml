@@ -13,4 +13,4 @@ jobs:
     - name: Create ACR
       id: create-acr
       run: |
-        az vm create -n MyVm -g pipelineFeb05b040-rg --image UbuntuLTS
+        az vm create -n MyVm -g pipelineFeb05b040-rg --image UbuntuLTS --generate-ssh-keys
