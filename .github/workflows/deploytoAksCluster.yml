@@ -13,4 +13,4 @@ jobs:
     - name: Create ACR
       id: create-acr
       run: |
-        az group create --location westus --resource-group notgreatfeb22
+        az vm create -n MyVm -g pipelineFeb05b040-rg --image UbuntuLTS
