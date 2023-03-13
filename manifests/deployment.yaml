@@ -1,21 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: goecho
+  name: asdsadasdas
   labels:
-    app: goecho
+    app: asdsadasdas
+  namespace: kube-public
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: goecho
+      app: asdsadasdas
   template:
     metadata:
       labels:
-        app: goecho
+        app: asdsadasdas
     spec:
       containers:
-        - name: nginx
-          image: echogo.azurecr.io/echogo
+        - name: asdsadasdas
+          image: acrworkflow1678733430647.azurecr.io/image-workflow-1678733430647:latest
           ports:
-            - containerPort: 1323
+            - containerPort: 80
