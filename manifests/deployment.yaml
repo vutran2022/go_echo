@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: asdsadasdas
+  name: abcdef
   labels:
-    app: asdsadasdas
-  namespace: kube-public
+    app: abcdef
+  namespace: namespace-workflow-1678734000246
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: asdsadasdas
+      app: abcdef
   template:
     metadata:
       labels:
-        app: asdsadasdas
+        app: abcdef
     spec:
       containers:
-        - name: asdsadasdas
-          image: acrworkflow1678733430647.azurecr.io/image-workflow-1678733430647:latest
+        - name: abcdef
+          image: acrworkflow1678734000246.azurecr.io/image-workflow-1678734000246:latest
           ports:
             - containerPort: 80
